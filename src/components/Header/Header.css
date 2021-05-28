@@ -1,0 +1,30 @@
+.Header--container {
+  display: flex;
+  flex-direction: column;
+}
+
+.Header--heading {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.Header--follower-count,
+.Header--toggle-label {
+  color: var(--text-secondary);
+  font-weight: bold;
+}
+
+.Header--divider {
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .Header--divider {
+    display: none;
+  }
+
+  .Header--container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
