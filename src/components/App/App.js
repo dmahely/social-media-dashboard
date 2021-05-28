@@ -8,7 +8,13 @@ const App = () => {
   const [isDark, setIsDark] = useState(false);
   const theme = { isDark, setIsDark };
   return (
-    <div className={cx({ "theme-light": !isDark }, { "theme-dark": isDark })}>
+    <div
+      className={cx(
+        "App--container",
+        { "theme-light": !isDark },
+        { "theme-dark": isDark }
+      )}
+    >
       <ThemeContext.Provider value={theme}>
         <Header />
       </ThemeContext.Provider>
