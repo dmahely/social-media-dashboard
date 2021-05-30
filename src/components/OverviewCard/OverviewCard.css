@@ -1,0 +1,49 @@
+.OverviewCard--container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-bg);
+  justify-content: center;
+  max-width: 250px;
+  min-height: 120px;
+  padding: 0px 20px;
+  border-radius: 5px;
+}
+
+.OverviewCard--container:hover {
+  background-color: var(--card-bg-hover);
+  cursor: pointer;
+}
+
+.OverviewCard--container > * {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.OverviewCard--title {
+  color: var(--text-secondary);
+  font-weight: bold;
+}
+
+.OverviewCard--stat {
+  color: var(--text-primary);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.OverviewCard--trend-up {
+  color: var(--lime-green);
+}
+
+.OverviewCard--trend-up::before {
+  content: "▴";
+}
+
+.OverviewCard--trend-down {
+  color: var(--bright-red);
+}
+
+.OverviewCard--trend-down::before {
+  content: "▾";
+}
