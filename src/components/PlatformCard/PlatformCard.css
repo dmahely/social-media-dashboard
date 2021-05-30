@@ -1,0 +1,80 @@
+.PlatformCard--container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-bg);
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  max-width: 350px;
+  min-height: 210px;
+  padding: 0px 20px;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.PlatformCard--container:hover {
+  background-color: var(--card-bg-hover);
+  cursor: pointer;
+}
+
+.PlatformCard--twitter {
+  border-top: 5px solid var(--twitter);
+}
+
+.PlatformCard--youtube {
+  border-top: 5px solid var(--youtube);
+}
+
+.PlatformCard--facebook {
+  border-top: 5px solid var(--facebook);
+}
+
+.PlatformCard--instagram {
+  border-top: 5px solid var(--instagram);
+}
+
+.PlatformCard--container > * {
+  margin: 5px;
+}
+
+.PlatformCard--platform-username {
+  display: flex;
+}
+
+.PlatformCard--username {
+  font-weight: bold;
+  color: var(--text-secondary);
+  margin-left: 5px;
+}
+
+.PlatformCard--stat {
+  font-size: 38px;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.PlatformCard--title {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: lighter;
+  color: var(--text-primary);
+  opacity: 0.6;
+}
+
+.PlatformCard--trend-up {
+  color: var(--lime-green);
+  font-weight: bold;
+}
+
+.PlatformCard--trend-up::before {
+  content: "▴ ";
+}
+
+.PlatformCard--trend-down {
+  color: var(--bright-red);
+  font-weight: bold;
+}
+
+.PlatformCard--trend-down::before {
+  content: "▾ ";
+}
