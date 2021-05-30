@@ -1,0 +1,17 @@
+.OverviewContainer--heading {
+  color: var(--text-secondary);
+}
+
+.OverviewContainer--inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .OverviewContainer--inner-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

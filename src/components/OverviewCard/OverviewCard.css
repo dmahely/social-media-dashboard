@@ -3,10 +3,11 @@
   flex-direction: column;
   background-color: var(--card-bg);
   justify-content: center;
-  max-width: 250px;
+  min-width: 250px;
   min-height: 120px;
   padding: 0px 20px;
   border-radius: 5px;
+  margin: 15px;
 }
 
 .OverviewCard--container:hover {
@@ -37,7 +38,7 @@
 }
 
 .OverviewCard--trend-up::before {
-  content: "▴";
+  content: "▴ ";
 }
 
 .OverviewCard--trend-down {
@@ -45,5 +46,5 @@
 }
 
 .OverviewCard--trend-down::before {
-  content: "▾";
+  content: "▾ ";
 }
