@@ -1,3 +1,14 @@
 .App--container {
   background-color: var(--bg-color);
 }
+
+.App--attribution {
+  text-align: center;
+  color: var(--bright-red);
+}
+
+.App--attribution > a {
+  color: var(--bright-red);
+  text-decoration: none;
+  font-style: italic;
+}
