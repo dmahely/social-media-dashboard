@@ -14,8 +14,48 @@
   font-weight: bold;
 }
 
+.Header--toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .Header--divider {
   width: 100%;
+}
+
+.Header--toggle-label-hidden {
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+  background: var(--toggle-bg);
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  text-indent: -9999px;
+}
+
+.Header--toggle-label-hidden:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 18px;
+  height: 18px;
+  background: var(--toggle);
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.Header--toggle {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.Header--toggle:checked + .Header--toggle-label-hidden:after {
+  right: calc(100% - 1px);
+  transform: translateX(100%);
 }
 
 @media screen and (min-width: 700px) {
