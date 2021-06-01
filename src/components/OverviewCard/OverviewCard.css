@@ -35,6 +35,7 @@
 
 .OverviewCard--trend-up {
   color: var(--lime-green);
+  font-weight: bold;
 }
 
 .OverviewCard--trend-up::before {
@@ -43,6 +44,7 @@
 
 .OverviewCard--trend-down {
   color: var(--bright-red);
+  font-weight: bold;
 }
 
 .OverviewCard--trend-down::before {
