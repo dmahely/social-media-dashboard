@@ -10,6 +10,7 @@
   padding: 0px 20px;
   border-radius: 5px;
   margin: 15px;
+  position: relative;
 }
 
 .PlatformCard--container:hover {
@@ -17,20 +18,30 @@
   cursor: pointer;
 }
 
-.PlatformCard--twitter {
-  border-top: 5px solid var(--twitter);
+.PlatformCard--container::before {
+  content: "";
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: -3px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
-.PlatformCard--youtube {
-  border-top: 5px solid var(--youtube);
+.PlatformCard--twitter::before {
+  background: var(--twitter);
 }
 
-.PlatformCard--facebook {
-  border-top: 5px solid var(--facebook);
+.PlatformCard--youtube::before {
+  background: var(--youtube);
 }
 
-.PlatformCard--instagram {
-  border-top: 5px solid var(--instagram);
+.PlatformCard--facebook::before {
+  background: var(--facebook);
+}
+
+.PlatformCard--instagram::before {
+  background: var(--instagram);
 }
 
 .PlatformCard--container > * {
